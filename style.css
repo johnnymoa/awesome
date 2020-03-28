@@ -2,11 +2,9 @@
 @import url(https://fonts.googleapis.com/css?family=Press+Start+2P);
 
 
-* {
-  cursor: default !important;
-}
 
-body {
+
+html {
     cursor: default !important;
 }
 
@@ -23,6 +21,7 @@ body {
   max-width: 980px;
   margin: 0 auto;
   margin-top: 150px;
+  padding: 0;
 }
 
 /* Header */
@@ -48,9 +47,6 @@ header > .container {
 header > .container > .nav-brand {
   margin-right: auto;
 }
-header > .container > .social-button {
-  margin-left: auto;
-}
 
 .nav-brand .brand-logo {
   margin-right: 1rem;
@@ -67,7 +63,7 @@ header.sticky > .container {
   align-items: center;
 }
 header.sticky .nav-brand h1 {
-  margin: 0;
+  margin: 2px;
 }
 header.sticky .nav-brand p {
   display: none;
@@ -96,34 +92,6 @@ h2 > a {
 
 .topic {
   margin-bottom: 3rem;
-}
-
-/* github link */
-.github-link {
-  position: fixed;
-  top: 100px;
-  right: -240px;
-  z-index: 999;
-  display: flex;
-  height: 100px;
-  color: #333;
-  text-decoration: none;
-  transition: all 0.3s ease;
-}
-.github-link.active {
-  right: 10px;
-}
-.github-link:hover {
-  text-decoration: none;
-}
-.github-link > p.nes-balloon {
-  align-self: flex-start;
-  padding: 0.2rem 0.5rem;
-  font-size: 0.8rem;
-  color: #333;
-}
-.github-link > i.nes-octocat {
-  align-self: flex-end;
 }
 
 /* Showcase */
@@ -227,53 +195,18 @@ h3.topic-title > i {
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.nes-container.member-card {
-  display: flex;
-  padding: 1rem 1.5rem;
-  width: 470px;
-  margin-bottom: 2rem;
-}
 
-.member-card .avatar > img {
-  display: block;
+
+.avatar > img {
   width: 80px;
   height: 80px;
   border-radius: 50%;
 }
-.member-card > .profile {
-  margin-left: 1.5rem;
-}
-.member-card > .profile > .name {
+
+ .profile > .name {
   font-size: 20px;
 }
 
-/* Contributors */
-.contributor {
-  display: inline-block;
-  margin: 1rem;
-  text-align: center;
-  width: 160px;
-}
-.contributor > p {
-  margin: .5rem;
-  font-size: 12px;
-}
-.contributor img.nes-avatar {
-  transition: all .4s;
-  display: inline-block;
-}
-.contributor:hover {
-  text-decoration: none;
-  opacity: 0.7;
-}
-
-/* Articles */
-.article-link > .title a {
-  color: #333;
-}
-.article-link > .title span {
-  margin-left: 1rem;
-}
 
 /* Scroll back to top */
 .scroll-btn {
@@ -325,3 +258,178 @@ img.lazy {
     margin-top: 190px;
   }
 }
+
+.nes-container.member-card {
+  display: flex;
+  padding: 1rem 1.5rem;
+  width: 470px;
+  margin-bottom: 2rem;
+}
+
+.row {
+  position: relative;
+  width: 100%;
+}
+
+.row [class^="col"] {
+  float: left;
+  margin: 0.5rem 2%;
+  min-height: 0.125rem;
+}
+
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11,
+.col-12 {
+  width: 96%;
+}
+
+.col-1-sm {
+  width: 4.33%;
+}
+
+.col-2-sm {
+  width: 12.66%;
+}
+
+.col-3-sm {
+  width: 21%;
+}
+
+.col-4-sm {
+  width: 29.33%;
+}
+
+.col-5-sm {
+  width: 37.66%;
+}
+
+.col-6-sm {
+  width: 46%;
+}
+
+.col-7-sm {
+  width: 54.33%;
+}
+
+.col-8-sm {
+  width: 62.66%;
+}
+
+.col-9-sm {
+  width: 71%;
+}
+
+.col-10-sm {
+  width: 79.33%;
+}
+
+.col-11-sm {
+  width: 87.66%;
+}
+
+.col-12-sm {
+  width: 96%;
+}
+
+.row::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.hidden-sm {
+  display: none;
+}
+
+@media only screen and (min-width: 33.75em) {  /* 540px */
+  .container {
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width: 45em) {  /* 720px */
+  .col-1 {
+    width: 4.33%;
+  }
+
+  .col-2 {
+    width: 12.66%;
+  }
+
+  .col-3 {
+    width: 21%;
+  }
+
+  .col-4 {
+    width: 29.33%;
+  }
+
+  .col-5 {
+    width: 37.66%;
+  }
+
+  .col-6 {
+    width: 46%;
+  }
+
+  .col-7 {
+    width: 54.33%;
+  }
+
+  .col-8 {
+    width: 62.66%;
+  }
+
+  .col-9 {
+    width: 71%;
+  }
+
+  .col-10 {
+    width: 79.33%;
+  }
+
+  .col-11 {
+    width: 87.66%;
+  }
+
+  .col-12 {
+    width: 96%;
+  }
+
+  .hidden-sm {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 60em) { /* 960px */
+  .container {
+    width: 75%;
+    max-width: 60rem;
+  }
+}
+
+
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+}
+
+.center {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+

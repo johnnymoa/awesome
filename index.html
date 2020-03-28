@@ -1,95 +1,181 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>Awesome</title>
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 	<link href="https://unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet" />
 	<link href="style.css" rel="stylesheet" />
+	<script>
+		window.onscroll = function () {
+			if (window.pageYOffset < 100) {
+				document.getElementById("head").classList.remove("sticky");
+			} else {
+				document.getElementById("head").classList.add("sticky");
+			}
+		}
+	</script>
 </head>
+
 <body>
 	<div id="nescss">
-		<header class="">
+		<header id="head">
 			<div class="container">
 				<div class="nav-brand">
-					<h1><i class="snes-jp-logo brand-logo"></i>Life of Awesome</h1>
+					<a href="/">
+						<h1><i class="snes-jp-logo brand-logo"></i>Life of Awesome</h1>
+					</a>
 					<p>Take a minute and enjoy yourself.</p>
-				</div> 
+				</div>
 			</div>
 		</header>
 		<div class="container">
 			<main class="main-content">
 				<section class="topic">
-					<h2 id="about"><a href="#about">#</a>About</h2> 
+					<h2 id="about"><a href="#about">#</a>About</h2>
 					<p>A collection of projects built to entertain you.</p>
 				</section>
+
 				<section class="topic nes-container with-title">
-					<h3 class="title">Soothing Snake</h3> 
+					<h3 class="title">Soothing Snake</h3>
 					<div id="containers" class="item">
 						<div class="row">
-							<div class="col-md-3">
+							<div class="col-3">
 								<img src="snake.png" style="max-height: 200px;" alt="Snake Game" class="img-thumbnail">
 							</div>
-							<div class="col-md-9">
+							<div class="col-9">
 								<div class="lists">
 									<ul class="nes-list is-disc">
-									  <li>Based on the classic snake game.</li>
-									  <li>Play using arroy keys.</li>
-									  <li>You can't loose! (if you bite the tail the snake becomes shorter).</li>
-									  <li>Soothing colors.</li>
-									  <li>Play it <a href="https://editor.p5js.org/johnny/present/JkJYa6uJH" target="_blank" rel="noopener">here.</a></li>
+										<li>Based on the classic snake game.</li>
+										<li>Play using arroy keys.</li>
+										<li>You can't loose! (if you bite the tail the snake becomes shorter).</li>
+										<li>Soothing colors.</li>
+										<li>Play it <a href="https://editor.p5js.org/johnny/present/JkJYa6uJH"
+												target="_blank" rel="noopener">here.</a></li>
 									</ul>
-								  </div>
+								</div>
 							</div>
 						</div>
-					</div> 
-			</section>
-			<section class="topic nes-container with-title">
-				<h3 class="title">Draw Items</h3> 
-				<div id="containers" class="item">
-					<div class="row">
-						<div class="col-md-3">
-							<img src="items.png" style="max-height: 200px;" alt="Items" class="img-thumbnail">
-						</div>
-						<div class="col-md-9">
-							<div class="lists">
-								<ul class="nes-list is-disc">
-								  <li>Draw shapes using your mouse, erase by right clicking.</li>
-								  <li>Mobile compatible.</li>
-								  <li>Use arrow keys to change rotation and size.</li>
-								  <li>Upload custom backgrounds and download your work.</li>
-								  <li>Try it <a href="https://editor.p5js.org/johnny/present/N427oo2Qw" target="_blank" rel="noopener">here.</a></li>
-								</ul>
-							  </div>
-						</div>
 					</div>
-				</div> 
-		</section>
+				</section>
 
-		<section class="topic nes-container with-title">
-			<h3 class="title">The Programmer's Guide To The Galaxy</h3> 
-			<div id="containers" class="item">
-				<div class="row">
-					<div class="col-md-3">
-						<img src="pgg.png" style="max-height: 200px;" alt="The programmer's guide to the galaxy" class="img-thumbnail">
+				<section class="topic nes-container with-title">
+					<h3 class="title">Draw Items</h3>
+					<div id="containers" class="item">
+						<div class="row">
+							<div class="col-3">
+								<img src="items.png" style="max-height: 200px;" alt="Items" class="img-thumbnail">
+							</div>
+							<div class="col-9">
+								<div class="lists">
+									<ul class="nes-list is-disc">
+										<li>Draw shapes using your mouse, erase by right clicking.</li>
+										<li>Mobile compatible.</li>
+										<li>Use arrow keys to change rotation and size.</li>
+										<li>Upload custom backgrounds and download your work.</li>
+										<li>Try it <a href="https://editor.p5js.org/johnny/present/N427oo2Qw"
+												target="_blank" rel="noopener">here.</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
 					</div>
-					<div class="col-md-9">
-						<div class="lists">
-							<ul class="nes-list is-disc">
-							  <li>A classic space shooter.</li>
-							  <li>Arrow keys and space to play.</li>
-							  <li>P for pause.</li>
-						          <li>M for music.</li>
-							  <li>Have fun crossing the galaxy!</li>
-							  <li>Play it <a href="https://editor.p5js.org/johnny/present/cd0G09AMJ" target="_blank" rel="noopener">here.</a></li>
-							</ul>
-						  </div>
+				</section>
+
+				<section class="topic nes-container with-title">
+					<h3 class="title">The Programmer's Guide To The Galaxy</h3>
+					<div id="containers" class="item">
+						<div class="row">
+							<div class="col-3">
+								<img src="pgg.png" style="max-height: 200px;" alt="The programmer's guide to the galaxy"
+									class="img-thumbnail">
+							</div>
+							<div class="col-9">
+								<div class="lists">
+									<ul class="nes-list is-disc">
+										<li>A classic space shooter.</li>
+										<li>Arrow keys and space to play.</li>
+										<li>P for pause.</li>
+										<li>M for music.</li>
+										<li>Have fun crossing the galaxy!</li>
+										<li>Play it <a href="https://editor.p5js.org/johnny/present/cd0G09AMJ"
+												target="_blank" rel="noopener">here.</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				
+				<div class="topic">
+					<h2 id="about"><a href="#credit">#</a>Credits</h2>
+					<h3 class="topic-title"><i class="nes-icon star"></i>Members</h3>
+					<div class="row">
+						<div class="col-6">
+							<div class="">
+							<div class="row">
+								<div class="avatar col-2-sm">
+									<img src="https://github.com/moacdieh.png?size=80"/>
+								</div>
+								<div class=" col-10-sm">
+									<h4 class="">Johnny Moacdieh</h4>
+									<p>Creator</p>
+									<div>
+										<a href="https://github.com/moacdieh" target="_blank" rel="noopener"
+											aria-label="github">
+											<i class="nes-icon github"></i>
+										</a>
+										<a href="https://www.linkedin.com/in/johnny-moacdieh-935687b3/" target="_blank"
+											rel="noopener" aria-label="linkedin">
+											<i class="nes-icon linkedin"></i>
+										</a>
+									</div>
+								</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-6">
+							<div class="">
+							<div class="row">
+								<div class="avatar col-2-sm">
+									<img src="https://instagram.fcdg1-1.fna.fbcdn.net/v/t51.2885-19/s320x320/18646226_1346377568773136_8692777051326775296_a.jpg?_nc_ht=instagram.fcdg1-1.fna.fbcdn.net&_nc_ohc=cpvXruCgi6cAX927hRd&oh=8a7392e06aa146dc7ed8c6e39c30f9b3&oe=5EA99C5B"/>
+								</div>
+								<div class=" col-10-sm">
+									<h4 class="">Johnny Zein</h4>
+									<p>Contributor</p>
+									<div>
+										<a href="https://www.instagram.com/jad.zein/" target="_blank" rel="noopener"
+											aria-label="instagram">
+											<i class="nes-icon instagram"></i>
+										</a>
+									</div>
+								</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<h3 class="topic-title"><i class="nes-icon heart"></i>Technologies used</h3>
+					<div class="lists">
+						<ul class="nes-list is-disc">
+							<li>Landing page style with <a href="https://nostalgic-css.github.io/NES.css/"
+								target="_blank" rel="noopener">NES.css</a>.</li>
+							<li>Projects partly built with <a href="https://p5js.org/"
+								target="_blank" rel="noopener">P5.js</a>.</li>
+							<li>Special thanks to the processing foundation <a href="https://processingfoundation.org/support"
+									target="_blank" rel="noopener">donate</a>.</li>
+						</ul>
 					</div>
 				</div>
-			</div> 
-	</section>
-				
+
 			</main>
+			<footer>
+				<p>
+					<span>©2020</span>
+					<a href="https://www.linkedin.com/in/johnny-moacdieh-935687b3/" target="_blank"
+						rel="noopener">Johnny Moacdieh</a>
+				</p>
+			</footer>
 		</div>
 	</div>
 </body>
+
 </html>
